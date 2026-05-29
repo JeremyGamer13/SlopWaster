@@ -73,7 +73,7 @@ will likely result in the least generation issues.
 To add censorship to these generations, you should instead check the input prompt separately before handing it over to SlopWaster.
 This should help reduce the amount of processing caused by a rejected prompt.
 
-> [!DANGER]
+> [!CAUTION]
 > Some "uncensored" Ollama models may be created with the intent of generating malicious, hateful, disturbing, crude, or sexual content.
 > You should really add censorship externally if you use these models in the program.
 
