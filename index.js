@@ -1,6 +1,8 @@
 /**
  * @fileoverview this is not the library itself, this will determine whether or not to invoke the "CLI"
  */
+/** @typedef {import("./src/ts/types")} SlopWasterTypes */
+
 const SlopWaster = require("./src/index.js");
 module.exports = SlopWaster;
 
@@ -10,6 +12,6 @@ if (isModule) {
 } else {
     const cli = require("./src/cli.js");
     return (async () => {
-        await cli(process.argv);
+        return await cli(process.argv);
     })();
 }

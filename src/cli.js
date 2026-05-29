@@ -1,6 +1,7 @@
 /**
  * @fileoverview the `slopwaster` cli
  */
+/** @typedef {import("./ts/types")} SlopWasterTypes */
 const fs = require("fs/promises");
 const path = require("path");
 
