@@ -62,6 +62,21 @@ If you want to save a couple things for re-use, output folders will contain a `/
 be entirely untouched by SlopWaster itself. This is the intended place to store things like persistent chat history while keeping it organized
 with the output itself.
 
+## Prompts & Models
+Adjusting prompts is not implemented in the CLI yet.
+Through the library, you can easily adjust the prompts to your liking through the constructor options.
+
+I recommend using "uncensored" LLM models for this program as each Agent response will be forced to create a playable game anyway.
+Rejected responses from different stages of generation can result in malformed or strange outputs, though the Agent model rejecting the prompt
+will likely result in the least generation issues.
+
+To add censorship to these generations, you should instead check the input prompt separately before handing it over to SlopWaster.
+This should help reduce the amount of processing caused by a rejected prompt.
+
+> [!DANGER]
+> Some "uncensored" Ollama models may be created with the intent of generating malicious, hateful, disturbing, crude, or sexual content.
+> You should really add censorship externally if you use these models in the program.
+
 ## Namings
 Recommended names when implementing SlopWaster in your own work (ie, a class wrapping around the library)
 
