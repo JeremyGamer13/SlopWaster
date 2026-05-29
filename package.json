@@ -1,0 +1,19 @@
+{
+    "name": "slopwaster",
+    "version": "1.0.0",
+    "description": "This is purely my raw creation, dumped for others to tinker with. You may use and modify it, but do not expect me to provide support or merge pull requests.",
+    "license": "MIT",
+    "author": "JeremyGamer13",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "yargs": "^18.0.0"
+    },
+    "dependencies": {
+        "ollama-chatting": "github:JeremyGamer13/ollama-chatting",
+        "skia-canvas": "^3.0.8"
+    }
+}

@@ -47,8 +47,8 @@ library/application that slopcodes time wasting games entirely locally
 I do not plan to make this program into a "good game creation tool." It is meant to make minigames at best.
 
 ## Namings
-Recommended names when implementing SlopWaster in your own work (ie, a class wrapping around the CLI)
+Recommended names when implementing SlopWaster in your own work (ie, a class wrapping around the library)
 
-- General name for this program: "SlopWaster" (no spaces)
-- Name intended for use in CLI commands: "slopwaster" (all lowercase)
+- General name for this program (module name): "SlopWaster" (no spaces)
+- Name intended for use in CLI commands: "slopwaster" (all lowercase, no dash)
 - Name when abbreviation is needed (or can be CLI also): "sw" (from **S**lop**W**aster)
