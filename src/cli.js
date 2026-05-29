@@ -28,12 +28,10 @@ const invoke = async (processArgv) => {
     if (argv.help) return;
 
     // make the generator
-    const swGenerator = new SlopWaster();
+    const swGenerator = new SlopWaster(argv.output);
     swGenerator.verbose = argv.verbose;
     swGenerator.warn = argv.warn;
     swGenerator.error = argv.error;
-
-    swGenerator.outputFolder = argv.output;
 
     swGenerator.ollamaUrl = argv.ollama_url;
     // these inputs have to be taken differently
@@ -56,7 +54,11 @@ const invoke = async (processArgv) => {
         swGenerator.ollamaHistory = JSON.parse(chatHistoryText);
     }
 
-    console.log(argv);
+    // actually gneerate now
+    if (argv.verbose) console.log("Starting generation, Iterate:", argv.iterate);
+    const agentResponse = await (!argv.iterate ? swGenerator.generate(inputPrompt) : swGenerator.iterate(inputPrompt));
+    // TODO: This should probably be stringified to remove fancy console formatting
+    console.log(agentResponse);
 };
 
 module.exports = invoke;

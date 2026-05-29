@@ -46,6 +46,22 @@ library/application that slopcodes time wasting games entirely locally
 
 I do not plan to make this program into a "good game creation tool." It is meant to make minigames at best.
 
+## Usage
+This can either be used like
+- a program (run the `index.js` file with node as if it were a CLI application)
+- a Node.js library (import the `index.js` file as a module)
+
+To see help information, use `--help` like so:
+```
+node index.js --help
+```
+
+In the case that you are using SlopWaster like a Node.js library, it may be helpful to try it out in the CLI first.
+
+If you want to save a couple things for re-use, output folders will contain a `/agent/userspace` directory that will
+be entirely untouched by SlopWaster itself. This is the intended place to store things like persistent chat history while keeping it organized
+with the output itself.
+
 ## Namings
 Recommended names when implementing SlopWaster in your own work (ie, a class wrapping around the library)
 
