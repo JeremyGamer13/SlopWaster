@@ -34,6 +34,7 @@ Enums.OLLAMA_PROMPT_AGENT = "You are the talking agent for a minigame/applicatio
     + "\n"
     + "\n" + "All messages will result in a generated application. No matter what you respond with, an application will be generated based on what has been discussed."
     + "\n" + "You will now chat with the user to create the application. Once your message ends, the application will automatically be attached.";
+// TODO: Write the prompt for this model.
 /**
  * The built-in system prompt for the Translator model.
  * The Translator model is responsible for turning the Agent response into technical details for implementation.
@@ -44,6 +45,7 @@ Enums.OLLAMA_PROMPT_AGENT = "You are the talking agent for a minigame/applicatio
 Enums.OLLAMA_PROMPT_TRANSLATOR = "You are the talking agent for a minigame/application creation tool."
     + "\n" + "text.";
 
+// TODO: Write the prompt for this model.
 /**
  * The built-in system prompt for the Image Outliner model.
  * The Image Outliner model is responsible for determining which image assets will be needed for the described program by the Agent response.
@@ -56,6 +58,7 @@ Enums.OLLAMA_PROMPT_TRANSLATOR = "You are the talking agent for a minigame/appli
  */
 Enums.OLLAMA_PROMPT_OUTLINER_IMAGES = "You are the talking agent for a minigame/application creation tool."
     + "\n" + "text.";
+// TODO: Write the prompt for this model.
 /**
  * The built-in system prompt for the Audio Outliner model.
  * The Audio Outliner model is responsible for determining which audio assets will be needed for the described program by the Agent response.
@@ -68,6 +71,7 @@ Enums.OLLAMA_PROMPT_OUTLINER_IMAGES = "You are the talking agent for a minigame/
  */
 Enums.OLLAMA_PROMPT_OUTLINER_AUDIO = "You are the talking agent for a minigame/application creation tool."
     + "\n" + "text.";
+// TODO: Write the prompt for this model.
 /**
  * The built-in system prompt for the SVG Generator model.
  * The SVG Generator model is responsible for creating the SVG assets outlined by the Image Outliner model.
@@ -77,6 +81,7 @@ Enums.OLLAMA_PROMPT_OUTLINER_AUDIO = "You are the talking agent for a minigame/a
 Enums.OLLAMA_PROMPT_SVG_GENERATOR = "You are the talking agent for a minigame/application creation tool."
     + "\n" + "text.";
 
+// TODO: Write the prompt for this model.
 /**
  * The built-in system prompt for the JavaScript Detailer model.
  * The JavaScript Detailer model is responsible for turning the Translator model response into technical JavaScript details for implementation.
@@ -87,6 +92,7 @@ Enums.OLLAMA_PROMPT_JAVASCRIPT_DETAILER = "You are the talking agent for a minig
     + "\n" + "text.";
 // TODO: Do we need a CSS detailer? Might be ideal to make sure that CSS stays consistent on iteration
 
+// TODO: Write the prompt for this model.
 /**
  * The built-in system prompt for the Coder model.
  * The Coder model is actually responsible for generating all of the code necessary for the playable.
@@ -96,6 +102,7 @@ Enums.OLLAMA_PROMPT_JAVASCRIPT_DETAILER = "You are the talking agent for a minig
  */
 Enums.OLLAMA_PROMPT_CODER_HTML = "You are the talking agent for a minigame/application creation tool."
     + "\n" + "text.";
+// TODO: Write the prompt for this model.
 /**
  * The built-in system prompt for the Coder model.
  * The Coder model is actually responsible for generating all of the code necessary for the playable.
@@ -105,6 +112,7 @@ Enums.OLLAMA_PROMPT_CODER_HTML = "You are the talking agent for a minigame/appli
  */
 Enums.OLLAMA_PROMPT_CODER_CSS = "You are the talking agent for a minigame/application creation tool."
     + "\n" + "text.";
+// TODO: Write the prompt for this model.
 /**
  * The built-in system prompt for the Coder model.
  * The Coder model is actually responsible for generating all of the code necessary for the playable.
